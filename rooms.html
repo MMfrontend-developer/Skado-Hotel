@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms & Suites — Skado Hotel & Suites | Oyo State, Nigeria</title>
+  <meta name="description" content="Explore our Standard, Deluxe, and Executive Suite rooms at Skado Hotel. Comfortable, air-conditioned rooms with 24hr power, WiFi, and hot showers from ₦25,000/night." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>" />
+  <style>
+    .room-detail-section { padding: 5rem 0; }
+    .room-detail-section:nth-child(even) { background: var(--dark-2); }
+    .room-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .room-detail-grid.reverse { direction: rtl; }
+    .room-detail-grid.reverse > * { direction: ltr; }
+    .room-detail-img { width: 100%; height: 420px; object-fit: cover; border-radius: var(--radius); }
+    .room-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1.5rem 0; }
+    .room-spec {
+      display: flex; align-items: center; gap: 0.6rem;
+      font-size: 0.82rem; color: var(--text-muted);
+    }
+    .room-spec svg { color: var(--gold); flex-shrink: 0; }
+    .price-tag {
+      display: inline-flex; align-items: baseline; gap: 0.4rem;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: var(--radius);
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .price-tag .amount { font-family: var(--font-display); font-size: 2.2rem; color: var(--gold-light); }
+    .price-tag .per { font-size: 0.78rem; color: var(--text-muted); }
+    @media (max-width: 768px) {
+      .room-detail-grid, .room-detail-grid.reverse { grid-template-columns: 1fr; direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Skado <span>Hotel & Suites</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="amenities.html">Amenities</a>
+      <a href="about.html">About</a>
+      <a href="booking.html" class="nav-cta">Book Now</a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="amenities.html">Amenities</a><a href="about.html">About</a><a href="booking.html">Book Now</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="margin-top: 0; padding-top: 80px;">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1600&q=80');"></div>
+  <div class="container page-hero-content">
+    <span class="section-label">Accommodation</span>
+    <h1>Rooms & <em style="color: var(--gold-light);">Suites</em></h1>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section" style="padding: 4rem 0;">
+  <div class="container" style="text-align: center; max-width: 700px;">
+    <p style="font-family: var(--font-display); font-size: 1.25rem; font-style: italic; color: var(--cream-dim); line-height: 1.8;">
+      Every room at Skado has been designed to be a sanctuary — a space where you can rest deeply, work productively, or simply unwind. Choose the experience that fits your journey.
+    </p>
+  </div>
+</section>
+
+<!-- STANDARD ROOM -->
+<div class="room-detail-section">
+  <div class="container room-detail-grid" data-aos="fade-up">
+    <div>
+      <img class="room-detail-img" src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Classic Comfort Room" loading="lazy" />
+    </div>
+    <div>
+      <span class="section-label">Standard</span>
+      <h2 class="section-title">Classic <em>Comfort Room</em></h2>
+      <div class="gold-line left"></div>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.5rem;">
+        Our Standard rooms are designed for the traveller who values quality rest without compromise. Clean, bright, and fully air-conditioned, they're your home away from home in Oyo State — with all the essentials done right.
+      </p>
+      <div class="room-specs">
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> King-size bed</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Air conditioning</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg> 43" Smart TV</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/></svg> High-speed WiFi</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 24hr power supply</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Hot shower</div>
+      </div>
+      <div class="price-tag">
+        <span class="amount">₦25,000</span>
+        <span class="per">/ night</span>
+      </div>
+      <br />
+      <a href="booking.html" class="btn btn-gold">Book This Room</a>
+    </div>
+  </div>
+</div>
+
+<!-- DELUXE ROOM -->
+<div class="room-detail-section">
+  <div class="container room-detail-grid reverse" data-aos="fade-up">
+    <div>
+      <img class="room-detail-img" src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80" alt="Deluxe Superior Room" loading="lazy" />
+    </div>
+    <div>
+      <span class="section-label">Deluxe</span>
+      <h2 class="section-title">Deluxe <em>Superior Room</em></h2>
+      <div class="gold-line left"></div>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.5rem;">
+        Step up to the Deluxe Superior — a larger, more luxurious space complete with a private balcony, fully stocked mini bar, and premium finishes throughout. Ideal for business travellers and couples seeking a touch more elegance.
+      </p>
+      <div class="room-specs">
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> King-size bed</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/></svg> 55" Smart TV</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l2-2 4 4 6-6 4 4"/></svg> Private balcony</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg> Mini bar (stocked)</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 24hr power supply</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg> Rainfall shower</div>
+      </div>
+      <div class="price-tag">
+        <span class="amount">₦40,000</span>
+        <span class="per">/ night</span>
+      </div>
+      <br />
+      <a href="booking.html" class="btn btn-gold">Book This Room</a>
+    </div>
+  </div>
+</div>
+
+<!-- EXECUTIVE SUITE -->
+<div class="room-detail-section">
+  <div class="container room-detail-grid" data-aos="fade-up">
+    <div>
+      <img class="room-detail-img" src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80" alt="Presidential Suite" loading="lazy" />
+    </div>
+    <div>
+      <span class="section-label">Executive Suite</span>
+      <h2 class="section-title">Presidential <em>Suite</em></h2>
+      <div class="gold-line left"></div>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.5rem;">
+        Our flagship Presidential Suite is the pinnacle of Skado's hospitality. With two bedrooms, a separate living room, kitchenette, and an in-suite Jacuzzi, this is where VIPs, executives, and families who expect nothing but the best call home.
+      </p>
+      <div class="room-specs">
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> 2 Bedrooms</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> Separate living room</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg> Kitchenette</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg> In-suite Jacuzzi</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/></svg> Dedicated butler</div>
+        <div class="room-spec"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> Panoramic city view</div>
+      </div>
+      <div class="price-tag">
+        <span class="amount">₦65,000</span>
+        <span class="per">/ night</span>
+      </div>
+      <br />
+      <a href="booking.html" class="btn btn-gold">Book This Suite</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">Skado <span>Hotel & Suites</span></div>
+        <p>Premium hospitality in the heart of Oyo State.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></a>
+          <a href="https://wa.me/2348012345678" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="rooms.html">Rooms & Suites</a><a href="amenities.html">Amenities</a><a href="about.html">About Us</a><a href="booking.html">Book Now</a></div>
+      <div class="footer-col"><h4>Our Rooms</h4><a href="rooms.html">Classic Comfort</a><a href="rooms.html">Deluxe Superior</a><a href="rooms.html">Presidential Suite</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="tel:+2348012345678">+234 801 234 5678</a><a href="mailto:reservations@skadohotel.com">reservations@skadohotel.com</a><a href="https://wa.me/2348012345678">Chat on WhatsApp</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Skado Hotel & Suites. All rights reserved.</p><p>Oyo State, Nigeria</p></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348012345678?text=Hello%20Skado%2C%20I%20would%20like%20to%20book%20a%20room." class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<div class="chat-float">
+  <button class="chat-btn" id="chatBtn" aria-label="AI Concierge">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <div class="chat-badge">AI</div>
+  </button>
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-avatar">A</div>
+      <div class="chat-header-info"><strong>Adé — AI Concierge</strong><span>● Online now</span></div>
+      <button class="chat-close" id="chatClose">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-input-row">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask about rooms, rates, amenities…" />
+      <button class="chat-send" id="chatSend" aria-label="Send"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

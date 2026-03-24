@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Skado Hotel & Suites | Oyo State, Nigeria</title>
+  <meta name="description" content="Learn about Skado Hotel & Suites — our story, mission, and commitment to premium Nigerian hospitality in Oyo State." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>" />
+  <style>
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .value-card {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: var(--dark-3);
+      border: 1px solid rgba(201,168,76,0.12);
+      border-radius: var(--radius);
+      transition: var(--transition);
+    }
+    .value-card:hover { border-color: rgba(201,168,76,0.35); transform: translateY(-4px); }
+    .value-number { font-family: var(--font-display); font-size: 4rem; color: rgba(201,168,76,0.15); line-height: 1; margin-bottom: 0.5rem; }
+    .value-card h3 { font-size: 1.3rem; margin-bottom: 0.75rem; }
+    .value-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; }
+    .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .team-card { text-align: center; }
+    .team-avatar { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid rgba(201,168,76,0.3); }
+    .team-card h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .team-card span { font-size: 0.75rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .values-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar scrolled" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Skado <span>Hotel & Suites</span></a>
+    <div class="nav-links"><a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="amenities.html">Amenities</a><a href="about.html">About</a><a href="booking.html" class="nav-cta">Book Now</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="amenities.html">Amenities</a><a href="about.html">About</a><a href="booking.html">Book Now</a>
+</div>
+
+<div class="page-hero" style="padding-top: 80px;">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1600&q=80');"></div>
+  <div class="container page-hero-content">
+    <span class="section-label">Our Story</span>
+    <h1>About <em style="color: var(--gold-light);">Skado</em></h1>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="section">
+  <div class="container about-grid">
+    <div data-aos="fade-right">
+      <span class="section-label">The Beginning</span>
+      <h2 class="section-title">Built on <em>Purpose,</em> <br>Rooted in <em>Nigeria</em></h2>
+      <div class="gold-line left"></div>
+      <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem;">
+        Skado Hotel and Suites was born from a simple but powerful vision: to create a space in Oyo State where guests are not merely customers, but honoured visitors. Founded by a family with deep roots in Oyo's business and hospitality community, Skado opened its doors with a commitment to setting a new standard for accommodation in South-West Nigeria.
+      </p>
+      <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem;">
+        From day one, we invested in what matters most to Nigerian travellers — reliable power, clean and modern rooms, genuine security, and warm human service. We didn't chase trends. We listened to guests, iterated, and built a reputation one stay at a time.
+      </p>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">
+        Today, Skado is a trusted name among corporate travellers, families on holiday, event organisers, and road-trippers passing through Oyo State. Our story is still being written — and every guest is a chapter in it.
+      </p>
+    </div>
+    <div class="about-image-wrap" data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Skado Hotel room" loading="lazy" />
+      <div class="about-image-accent">
+        <span class="num">100+</span>
+        <span class="lbl">Happy Guests<br>Monthly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section" style="background: var(--dark-2);">
+  <div class="container" style="text-align: center;" data-aos="fade-up">
+    <span class="section-label">Mission & Vision</span>
+    <h2 class="section-title">What We <em>Stand For</em></h2>
+    <div class="gold-line"></div>
+    <div style="max-width: 700px; margin: 3rem auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <div style="background: var(--dark-3); border: 1px solid rgba(201,168,76,0.15); border-radius: var(--radius); padding: 2rem; text-align: left;">
+        <div style="color: var(--gold); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.75rem;">Our Mission</div>
+        <p style="font-family: var(--font-display); font-size: 1.1rem; font-style: italic; color: var(--cream-dim);">"To provide every guest with a stay that combines genuine comfort, reliable service, and the warmth of authentic Nigerian hospitality."</p>
+      </div>
+      <div style="background: var(--dark-3); border: 1px solid rgba(201,168,76,0.15); border-radius: var(--radius); padding: 2rem; text-align: left;">
+        <div style="color: var(--gold); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.75rem;">Our Vision</div>
+        <p style="font-family: var(--font-display); font-size: 1.1rem; font-style: italic; color: var(--cream-dim);">"To become the most trusted and respected hotel brand in Oyo State — known for excellence, consistency, and care."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+  <div class="container">
+    <div style="text-align: center;" data-aos="fade-up">
+      <span class="section-label">Core Values</span>
+      <h2 class="section-title">The Principles We <em>Live By</em></h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" data-aos="fade-up" data-delay="0">
+        <div class="value-number">01</div>
+        <h3>Guest First, Always</h3>
+        <p>Every decision we make — from hiring to room design — is measured against one question: does this serve our guests better? The answer shapes everything.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-delay="100">
+        <div class="value-number">02</div>
+        <h3>Reliability Without Exception</h3>
+        <p>Power, water, security, WiFi — these aren't bonuses at Skado. They're guarantees. We invest heavily in infrastructure so you never have to worry.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-delay="200">
+        <div class="value-number">03</div>
+        <h3>Genuine Nigerian Warmth</h3>
+        <p>Hospitality is cultural. Our team greets every guest not as a transaction but as a welcome visitor — with the warmth and care that makes Nigeria's people renowned worldwide.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-delay="0">
+        <div class="value-number">04</div>
+        <h3>Continuous Improvement</h3>
+        <p>We actively seek feedback and use it. Skado today is better than Skado last year — and we will continue this discipline until we are unmatched in the region.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-delay="100">
+        <div class="value-number">05</div>
+        <h3>Integrity in All Things</h3>
+        <p>Transparent pricing, honest communication, no hidden charges. What you see on this website is exactly what you get when you arrive.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-delay="200">
+        <div class="value-number">06</div>
+        <h3>Community Pride</h3>
+        <p>We employ locally, source food from regional producers, and contribute to Oyo State's growth. Skado's success is tied to the prosperity of this community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO GALLERY -->
+<section class="section gallery-section">
+  <div class="container">
+    <div style="text-align: center;" data-aos="fade-up">
+      <span class="section-label">Our Spaces</span>
+      <h2 class="section-title">Inside <em>Skado</em></h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80" alt="Hotel exterior" loading="lazy" /><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Standard room" loading="lazy" /><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80" alt="Executive suite" loading="lazy" /><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant" loading="lazy" /><div class="gallery-overlay"></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Lobby" loading="lazy" /><div class="gallery-overlay"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background: var(--dark-3); border-top: 1px solid rgba(201,168,76,0.15); padding: 5rem 0;">
+  <div class="container" style="text-align: center;" data-aos="fade-up">
+    <span class="section-label">Come Experience It</span>
+    <h2 class="section-title">Let Us Show You <em>What We Mean</em></h2>
+    <div class="gold-line"></div>
+    <p style="color: var(--text-muted); margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">The best way to understand Skado is to stay with us. Reserve your room today and experience the difference firsthand.</p>
+    <a href="booking.html" class="btn btn-gold" style="font-size: 0.9rem; padding: 1rem 2.5rem;">Make a Reservation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="nav-logo">Skado <span>Hotel & Suites</span></div><p>Premium hospitality in the heart of Oyo State.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="amenities.html">Amenities</a><a href="about.html">About</a><a href="booking.html">Book Now</a></div>
+      <div class="footer-col"><h4>Our Rooms</h4><a href="rooms.html">Classic Comfort</a><a href="rooms.html">Deluxe Superior</a><a href="rooms.html">Presidential Suite</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="tel:+2348012345678">+234 801 234 5678</a><a href="mailto:reservations@skadohotel.com">Email Us</a><a href="https://wa.me/2348012345678">WhatsApp</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Skado Hotel & Suites. All rights reserved.</p><p>Oyo State, Nigeria</p></div>
+  </div>
+</footer>
+<a href="https://wa.me/2348012345678" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+<div class="chat-float"><button class="chat-btn" id="chatBtn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><div class="chat-badge">AI</div></button>
+<div class="chat-window" id="chatWindow"><div class="chat-header"><div class="chat-avatar">A</div><div class="chat-header-info"><strong>Adé — AI Concierge</strong><span>● Online now</span></div><button class="chat-close" id="chatClose">✕</button></div><div class="chat-messages" id="chatMessages"></div><div class="chat-input-row"><input type="text" class="chat-input" id="chatInput" placeholder="Ask us anything…" /><button class="chat-send" id="chatSend"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div></div></div>
+<script src="main.js"></script>
+</body></html>

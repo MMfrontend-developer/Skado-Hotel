@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Room — Skado Hotel & Suites | Oyo State, Nigeria</title>
+  <meta name="description" content="Reserve your stay at Skado Hotel & Suites in Oyo State, Nigeria. Standard, Deluxe, and Executive Suite rooms from ₦25,000/night. Direct booking, best rates guaranteed." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>" />
+</head>
+<body>
+<nav class="navbar scrolled" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Skado <span>Hotel & Suites</span></a>
+    <div class="nav-links"><a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="amenities.html">Amenities</a><a href="about.html">About</a><a href="booking.html" class="nav-cta">Book Now</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="amenities.html">Amenities</a><a href="about.html">About</a><a href="booking.html">Book Now</a>
+</div>
+
+<div class="page-hero" style="padding-top: 80px;">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1600&q=80');"></div>
+  <div class="container page-hero-content">
+    <span class="section-label">Reservations</span>
+    <h1>Book Your <em style="color: var(--gold-light);">Stay</em></h1>
+  </div>
+</div>
+
+<!-- BOOKING -->
+<section class="section booking-section">
+  <div class="container booking-grid">
+    <!-- FORM -->
+    <div data-aos="fade-right">
+      <span class="section-label">Reservation Form</span>
+      <h2 class="section-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem);">Direct Booking — <em>Best Rates</em></h2>
+      <div class="gold-line left"></div>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 2rem;">Fill in your details and we'll confirm your reservation within 30 minutes. For immediate assistance, reach us on WhatsApp.</p>
+
+      <form id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Adaeze" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Okonkwo" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+234 801 234 5678" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="adaeze@email.com" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkin">Check-in Date *</label>
+            <input type="date" id="checkin" name="checkin" required />
+          </div>
+          <div class="form-group">
+            <label for="checkout">Check-out Date *</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="roomType">Room Type *</label>
+            <select id="roomType" name="roomType" required>
+              <option value="" disabled selected>Select a room</option>
+              <option value="standard">Classic Comfort Room — ₦25,000/night</option>
+              <option value="deluxe">Deluxe Superior Room — ₦40,000/night</option>
+              <option value="suite">Presidential Suite — ₦65,000/night</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests *</label>
+            <select id="guests" name="guests" required>
+              <option value="" disabled selected>Select</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5+">5+ Guests</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="requests">Special Requests (Optional)</label>
+          <textarea id="requests" name="requests" placeholder="e.g. Early check-in, airport pickup, dietary requirements, anniversary setup…"></textarea>
+        </div>
+
+        <div style="background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.2); border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: 0.8rem; color: var(--text-muted);">
+          <strong style="color: var(--gold);">✓ Best Rate Guarantee</strong> — Booking directly with us ensures you get the lowest available rate and priority room assignment.
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center; padding: 1rem; font-size: 0.9rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Submit Reservation Request
+        </button>
+
+        <div class="form-success" id="formSuccess">
+          <strong>✓ Reservation request received!</strong><br>
+          Thank you — a member of our team will confirm your booking within 30 minutes via phone or WhatsApp.
+        </div>
+      </form>
+    </div>
+
+    <!-- CONTACT SIDEBAR -->
+    <div data-aos="fade-left">
+      <span class="section-label">Prefer to Talk?</span>
+      <h2 class="section-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem);">Reach Us <em>Directly</em></h2>
+      <div class="gold-line left"></div>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 2.5rem;">Our team is available 24 hours a day. Call, WhatsApp, or email us — whichever is most convenient for you.</p>
+
+      <!-- WHATSAPP CTA -->
+      <a href="https://wa.me/2348012345678?text=Hello%20Skado%20Hotel%2C%20I%20would%20like%20to%20make%20a%20reservation." target="_blank"
+         style="display: flex; align-items: center; gap: 1rem; background: rgba(37,211,102,0.1); border: 1px solid rgba(37,211,102,0.3); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 1.5rem; transition: var(--transition);"
+         onmouseover="this.style.background='rgba(37,211,102,0.18)'" onmouseout="this.style.background='rgba(37,211,102,0.1)'">
+        <div style="width: 48px; height: 48px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        </div>
+        <div>
+          <div style="font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: #4ade80; margin-bottom: 0.2rem;">WhatsApp (Fastest)</div>
+          <div style="font-weight: 500; color: var(--cream);">+234 801 234 5678</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">Tap to start a chat now</div>
+        </div>
+      </a>
+
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><h4>Phone</h4><p><a href="tel:+2348012345678" style="color: var(--gold-light);">+234 801 234 5678</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><h4>Email</h4><p><a href="mailto:reservations@skadohotel.com" style="color: var(--gold-light);">reservations@skadohotel.com</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4>Address</h4><p>Skado Hotel & Suites<br>Oyo State, Nigeria</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><h4>Hours</h4><p>Front Desk: 24 Hours, 7 Days<br>Check-in: 2 PM — Check-out: 12 PM</p></div>
+        </div>
+      </div>
+
+      <!-- ROOM PRICE SUMMARY -->
+      <div style="margin-top: 2.5rem; background: var(--dark-3); border: 1px solid rgba(201,168,76,0.15); border-radius: var(--radius); overflow: hidden;">
+        <div style="padding: 1rem 1.25rem; border-bottom: 1px solid rgba(201,168,76,0.1); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);">Quick Rate Reference</div>
+        <div style="padding: 0.85rem 1.25rem; border-bottom: 1px solid rgba(201,168,76,0.08); display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Classic Comfort Room</span>
+          <span style="font-family: var(--font-display); color: var(--gold-light); font-size: 1.1rem;">₦25,000</span>
+        </div>
+        <div style="padding: 0.85rem 1.25rem; border-bottom: 1px solid rgba(201,168,76,0.08); display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Deluxe Superior Room</span>
+          <span style="font-family: var(--font-display); color: var(--gold-light); font-size: 1.1rem;">₦40,000</span>
+        </div>
+        <div style="padding: 0.85rem 1.25rem; display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Presidential Suite</span>
+          <span style="font-family: var(--font-display); color: var(--gold-light); font-size: 1.1rem;">₦65,000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="section map-section" style="padding-top: 0;">
+  <div class="container">
+    <div class="map-embed" style="height: 420px;" data-aos="fade-up">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d126925.3!2d3.9470!3d7.3775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1234567890" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Skado Hotel location"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="nav-logo">Skado <span>Hotel & Suites</span></div><p>Premium hospitality in the heart of Oyo State.</p></div>
+      <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="amenities.html">Amenities</a><a href="about.html">About</a><a href="booking.html">Book Now</a></div>
+      <div class="footer-col"><h4>Our Rooms</h4><a href="rooms.html">Classic Comfort</a><a href="rooms.html">Deluxe Superior</a><a href="rooms.html">Presidential Suite</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="tel:+2348012345678">+234 801 234 5678</a><a href="https://wa.me/2348012345678">WhatsApp</a><a href="mailto:reservations@skadohotel.com">Email Us</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Skado Hotel & Suites. All rights reserved.</p><p>Oyo State, Nigeria</p></div>
+  </div>
+</footer>
+<a href="https://wa.me/2348012345678" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+<div class="chat-float"><button class="chat-btn" id="chatBtn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><div class="chat-badge">AI</div></button>
+<div class="chat-window" id="chatWindow"><div class="chat-header"><div class="chat-avatar">A</div><div class="chat-header-info"><strong>Adé — AI Concierge</strong><span>● Online now</span></div><button class="chat-close" id="chatClose">✕</button></div><div class="chat-messages" id="chatMessages"></div><div class="chat-input-row"><input type="text" class="chat-input" id="chatInput" placeholder="Any questions about your stay?" /><button class="chat-send" id="chatSend"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button></div></div></div>
+<script src="main.js"></script>
+</body></html>
